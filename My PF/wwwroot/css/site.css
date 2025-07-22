@@ -27,6 +27,12 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Ensures body takes full viewport height */
     margin-bottom: 60px; /* Existing margin-bottom for footer */
+
+/*    for background image*/
+    background-image: url('/images/vanishing-stripes.svg');
+    background-repeat: repeat; /* or no-repeat */
+    background-size: cover; /* or contain / auto */
+    background-attachment: fixed; /* keeps it fixed on scroll */
 }
 
 /* Ensures main content fills available space */
@@ -97,7 +103,7 @@ nav {
     }
 
     .about-left p {
-        color: black;
+        color: white;
         line-height: 1.6;
         font-size: 1rem;
     }
@@ -247,7 +253,7 @@ nav {
         text-align: center;
         font-size: 1.1rem;
         margin-bottom: 50px;
-        color: #ccc;
+        color: white;
     }
 
 .skill-categories {
@@ -341,7 +347,7 @@ nav {
         text-align: center;
         font-size: 1.1rem;
         margin-bottom: 50px;
-        color: #ccc;
+        color: white;
     }
 
 .projects-grid {
@@ -452,7 +458,7 @@ nav {
 
     .photography-section p {
         margin-bottom: 40px;
-        color: #ccc;
+        color: white;
         font-size: 1.1rem;
     }
 
@@ -501,5 +507,6 @@ nav {
         font-size: 0.75rem; /* text-xs */
         font-weight: 500; /* font-medium */
         margin: 0;
+        color:white;
     }
 
