@@ -23,7 +23,6 @@ This is my personal **portfolio website** built with **ASP.NET Core MVC** to sho
 - **JavaScript** – For interactivity and smooth scrolling
 
 ---
-<img width="1920" height="5912" alt="Portfolio_using_asp net" src="https://github.com/user-attachments/assets/5ef73f20-8848-444f-837e-2d3e81f19aef" />
 
 
 
