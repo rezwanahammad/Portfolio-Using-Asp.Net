@@ -2,12 +2,33 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="intro-section text-center">
+<div class="intro-section text-center mb-3">
     <img src="~/images/raadnorm3.jpg" alt="Raad's Photo" class="profile-img" />
     <h1>Hello, I'm Raad</h1>
-    <p>I am a passionate Computer Science student and developer, dedicated to creating modern and impactful digital solutions.</p>
+    <div class="intro-text">
+        <p>
+            Computer Science & Engineering student with expertise in C, C++, Python, Java, JavaScript, and modern frameworks like React, Next.js, and React Native. Dedicated to building impactful solutions through code. <strong>Always learning, always building.</strong>
+        </p>
+    </div>
 </div>
+
 
 <section id="about">
     @Html.Partial("_About")
+</section>
+
+<section id="education">
+    @Html.Partial("_Education")
+</section>
+
+<section id="skills">
+    @Html.Partial("_Skills")
+</section>
+
+<section id="projects">
+    @Html.Partial("_Projects")
+</section>
+
+<section id="photography">
+    @Html.Partial("_Photography")
 </section>

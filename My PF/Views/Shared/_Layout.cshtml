@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow  fixed-top shadow">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">My_PF</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -23,16 +23,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Home" asp-action="About">About</a>
+                            <a class="nav-link text-dark" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Education">Education</a>
+                            <a class="nav-link text-dark" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Skills">Skills</a>
+                            <a class="nav-link text-dark" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Projects">Projects</a>
+                            <a class="nav-link text-dark" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#photography">Photography</a>
                         </li>
 
                     </ul>
@@ -41,17 +44,20 @@
         </nav>
     </header>
 
-    <div class="container flex-fill">
-        <main role="main" class="pb-3">
+    <div class="d-flex flex-column min-vh-100">
+        <main role="main" class="flex-fill">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted mt-auto">
-        <div class="container">
-            &copy; 2025 - My_PF - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="custom-footer mt-auto mb-0">
+        <div class="footer-container">
+            <p>
+                &copy; @DateTime.Now.Year - Raad | All rights reserved.
+            </p>
         </div>
     </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
